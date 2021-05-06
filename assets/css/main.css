@@ -1,3 +1,4 @@
+/* Variables */
 /* Elements */
 * {
   margin: 0;
@@ -9,20 +10,45 @@
 html,
 body {
   min-height: 100%;
-  color: white;
-  font-family: 'Lato', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   text-align: center;
 }
 
-h1 {
-  font-weight: bold;
+/* UI Elements */
+h1,
+h3 {
   text-transform: uppercase;
-  font-size: 64px;
+}
+
+h1 {
+  color: #F4B131;
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  color: gray;
+  padding: 3px;
 }
 
 button {
-  font-family: 'Lato', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
+  margin-bottom: .5em;
+  background: transparent;
+  color: white;
+  border: 3px solid #F4B131;
+  border-radius: 25px;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 10px 30px;
+}
+
+button:active {
+  background: #F4B131;
 }
 
 img {
@@ -49,6 +75,7 @@ header {
   display: none;
 }
 
+/* Navigation Bar */
 nav {
   -webkit-transform: scale(0, 1);
           transform: scale(0, 1);
@@ -60,7 +87,7 @@ nav {
 
 nav a {
   color: white;
-  font-size: 26px;
+  font-size: 18px;
   text-decoration: none;
   opacity: 0;
   -webkit-transition: opacity 75ms ease-in-out;
@@ -97,17 +124,17 @@ nav a {
 }
 
 .nav-bar li:first-child {
-  margin-top: 6em;
+  margin-top: 4.5em;
 }
 
 .nav-bar li:not(:last-child) {
-  padding-bottom: 20px;
+  padding-bottom: 12px;
 }
 
-/* Home Page */
+/* Home Page Hero Section */
 .home-hero {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url("../../assets/images/home-hero-background.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../../assets/images/home-hero-background.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../assets/images/home-hero-background.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/images/home-hero-background.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -127,21 +154,35 @@ nav a {
   font-size: 3em;
 }
 
-.home-hero span {
+.home-hero h1 {
+  color: white;
+}
+
+.home-hero h1 span {
   color: #F4B131;
 }
 
-.button {
-  margin-bottom: .5em;
-  background: transparent;
-  color: white;
-  border: 3px solid #F4B131;
-  border-radius: 25px;
-  font-size: 36px;
-  padding: 10px 30px;
+/* Home Page What We Offer Section */
+.home-perks {
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.button:active {
-  background: #F4B131;
+.home-perks img {
+  height: 150px;
+}
+
+.perk-item {
+  margin-top: 2em;
+}
+
+.perk-description p {
+  margin-top: 9px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,8 @@
-// Variables
+/* Variables */
+
 $primaryColor: #F4B131;
+$fontStack: 'Josefin Sans',
+sans-serif;
 
 /* Elements */
 
@@ -12,20 +15,47 @@ $primaryColor: #F4B131;
 html,
 body {
     min-height: 100%;
-    color: white;
-    font-family: 'Lato', sans-serif;
+    font-family: $fontStack;
     text-align: center;
 }
 
-h1 {
-    font-weight: bold;
+
+/* UI Elements */
+
+h1,
+h3 {
     text-transform: uppercase;
-    font-size: 64px;
+}
+
+h1 {
+    color: $primaryColor;
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    color: gray;
+    padding: 3px;
 }
 
 button {
-    font-family: 'Lato', sans-serif;
+    font-family: $fontStack;
     text-transform: uppercase;
+    margin-bottom: .5em;
+    background: transparent;
+    color: white;
+    border: 3px solid $primaryColor;
+    border-radius: 25px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px 30px;
+}
+
+button:active {
+    background: $primaryColor;
 }
 
 img {
@@ -54,6 +84,9 @@ header {
     display: none;
 }
 
+
+/* Navigation Bar */
+
 nav {
     transform: scale(0, 1);
     transition: all 300ms ease-in-out;
@@ -62,7 +95,7 @@ nav {
 
 nav a {
     color: white;
-    font-size: 26px;
+    font-size: 18px;
     text-decoration: none;
     opacity: 0;
     transition: opacity 75ms ease-in-out;
@@ -91,18 +124,18 @@ nav a {
 }
 
 .nav-bar li:first-child {
-    margin-top: 6em;
+    margin-top: 4.5em;
 }
 
 .nav-bar li:not(:last-child) {
-    padding-bottom: 20px;
+    padding-bottom: 12px;
 }
 
 
-/* Home Page */
+/* Home Page Hero Section */
 
 .home-hero {
-    background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../../assets/images/home-hero-background.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url("../../assets/images/home-hero-background.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -113,20 +146,31 @@ nav a {
     font-size: 3em;
 }
 
-.home-hero span {
+.home-hero h1 {
+    color: white;
+}
+
+.home-hero h1 span {
     color: $primaryColor;
 }
 
-.button {
-    margin-bottom: .5em;
-    background: transparent;
-    color: white;
-    border: 3px solid $primaryColor;
-    border-radius: 25px;
-    font-size: 36px;
-    padding: 10px 30px;
+
+/* Home Page What We Offer Section */
+
+.home-perks {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
 }
 
-.button:active {
-    background: $primaryColor;
+.home-perks img {
+    height: 150px;
+}
+
+.perk-item {
+    margin-top: 2em;
+}
+
+.perk-description p {
+    margin-top: 9px;
 }

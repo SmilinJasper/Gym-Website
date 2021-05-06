@@ -163,12 +163,17 @@ nav a {
     flex-direction: column;
 }
 
-.home-perks img {
+.perk-item {
+    margin-top: 2em;
+}
+
+.perk-item-image {
     height: 150px;
 }
 
-.perk-item {
-    margin-top: 2em;
+.perk-item-image--small {
+    height: 100px;
+    margin-bottom: 15px;
 }
 
 .perk-description p {

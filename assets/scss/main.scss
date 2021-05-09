@@ -4,7 +4,7 @@ $primaryColor: #F4B131;
 $fontStack: 'Josefin Sans',
 sans-serif;
 
-/* Elements */
+/* Basic UI Elements */
 
 * {
     margin: 0;
@@ -19,8 +19,13 @@ body {
     text-align: center;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 
-/* UI Elements */
+
+/* Typography */
 
 h1,
 h3 {
@@ -29,44 +34,24 @@ h3 {
 
 h1 {
     color: $primaryColor;
-    font-size: 48px;
+    font-size: 40px;
+    line-height: 1.1em;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 18px;
 }
 
 p {
     color: gray;
-    padding: 3px;
-}
-
-button {
-    font-family: $fontStack;
-    text-transform: uppercase;
-    margin-bottom: .5em;
-    background: transparent;
-    color: white;
-    border: 3px solid $primaryColor;
-    border-radius: 25px;
-    font-size: 24px;
-    font-weight: 600;
-    padding: 10px 30px;
-}
-
-button:active {
-    background: $primaryColor;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
+    padding: 17px;
+    line-height: 1.6em;
 }
 
 
-/* Header */
+/* Navigation Bar */
 
-header {
+nav-bar-header {
     width: 75vw;
     position: absolute;
     right: 0;
@@ -78,14 +63,12 @@ header {
     top: .5em;
     right: .5em;
     z-index: 100;
+    color: white;
 }
 
 .nav-toggle {
     display: none;
 }
-
-
-/* Navigation Bar */
 
 nav {
     transform: scale(0, 1);
@@ -147,11 +130,34 @@ nav a {
 }
 
 .home-hero h1 {
+    font-size: 48px;
     color: white;
 }
 
 .home-hero h1 span {
     color: $primaryColor;
+}
+
+
+/* Buttons */
+
+.button {
+    font-family: $fontStack;
+    text-transform: uppercase;
+    background: transparent;
+    color: white;
+    border: 3px solid $primaryColor;
+    padding: 10px 30px;
+}
+
+.button:active {
+    background: $primaryColor;
+}
+
+.button__join {
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 25px;
 }
 
 
@@ -168,14 +174,67 @@ nav a {
 }
 
 .perk-item-image {
-    height: 150px;
-}
-
-.perk-item-image--small {
     height: 100px;
     margin-bottom: 15px;
 }
 
+.perk-item-image--big {
+    height: 150px;
+}
+
 .perk-description p {
     margin-top: 9px;
+}
+
+
+/* Home-Testimonials */
+
+.home-testimonials {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial {
+    width: 270px;
+    height: auto;
+    padding: 1.5em 0em;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+}
+
+.testimonial:hover {
+    box-shadow: 0px 0px 56px rgba(0, 0, 0, .20);
+}
+
+blockquote::before {
+    content: open-quote;
+    font-size: 4rem;
+    line-height: 1em;
+    color: #3174F4;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+blockquote::after {
+    content: close-quote;
+    font-size: 4rem;
+    line-height: .6em;
+    color: #3174F4;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+blockquote p {
+    font-size: 18px;
+}
+
+cite {
+    color: #3174F4;
+    font-weight: bold;
 }

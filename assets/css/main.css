@@ -1,5 +1,5 @@
 /* Variables */
-/* Elements */
+/* Basic UI Elements */
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +14,12 @@ body {
   text-align: center;
 }
 
-/* UI Elements */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Typography */
 h1,
 h3 {
   text-transform: uppercase;
@@ -22,42 +27,22 @@ h3 {
 
 h1 {
   color: #F4B131;
-  font-size: 48px;
+  font-size: 40px;
+  line-height: 1.1em;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 p {
   color: gray;
-  padding: 3px;
+  padding: 17px;
+  line-height: 1.6em;
 }
 
-button {
-  font-family: "Josefin Sans", sans-serif;
-  text-transform: uppercase;
-  margin-bottom: .5em;
-  background: transparent;
-  color: white;
-  border: 3px solid #F4B131;
-  border-radius: 25px;
-  font-size: 24px;
-  font-weight: 600;
-  padding: 10px 30px;
-}
-
-button:active {
-  background: #F4B131;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Header */
-header {
+/* Navigation Bar */
+nav-bar-header {
   width: 75vw;
   position: absolute;
   right: 0;
@@ -69,13 +54,13 @@ header {
   top: .5em;
   right: .5em;
   z-index: 100;
+  color: white;
 }
 
 .nav-toggle {
   display: none;
 }
 
-/* Navigation Bar */
 nav {
   -webkit-transform: scale(0, 1);
           transform: scale(0, 1);
@@ -155,11 +140,32 @@ nav a {
 }
 
 .home-hero h1 {
+  font-size: 48px;
   color: white;
 }
 
 .home-hero h1 span {
   color: #F4B131;
+}
+
+/* Buttons */
+.button {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  background: transparent;
+  color: white;
+  border: 3px solid #F4B131;
+  padding: 10px 30px;
+}
+
+.button:active {
+  background: #F4B131;
+}
+
+.button__join {
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 25px;
 }
 
 /* Home Page What We Offer Section */
@@ -179,15 +185,81 @@ nav a {
 }
 
 .perk-item-image {
-  height: 150px;
-}
-
-.perk-item-image--small {
   height: 100px;
   margin-bottom: 15px;
 }
 
+.perk-item-image--big {
+  height: 150px;
+}
+
 .perk-description p {
   margin-top: 9px;
+}
+
+/* Home-Testimonials */
+.home-testimonials {
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testimonial {
+  width: 270px;
+  height: auto;
+  padding: 1.5em 0em;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  grid-gap: 20px;
+}
+
+.testimonial:hover {
+  -webkit-box-shadow: 0px 0px 56px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 56px rgba(0, 0, 0, 0.2);
+}
+
+blockquote::before {
+  content: open-quote;
+  font-size: 4rem;
+  line-height: 1em;
+  color: #3174F4;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+blockquote::after {
+  content: close-quote;
+  font-size: 4rem;
+  line-height: .6em;
+  color: #3174F4;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+blockquote p {
+  font-size: 18px;
+}
+
+cite {
+  color: #3174F4;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */

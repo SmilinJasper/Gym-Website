@@ -51,9 +51,9 @@ p {
 
 /* Navigation Bar */
 
-nav-bar-header {
+.nav-bar-header {
     width: 75vw;
-    position: absolute;
+    position: fixed;
     right: 0;
     text-transform: uppercase;
 }
@@ -70,20 +70,6 @@ nav-bar-header {
     display: none;
 }
 
-nav {
-    transform: scale(0, 1);
-    transition: all 300ms ease-in-out;
-    transform-origin: right;
-}
-
-nav a {
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-    opacity: 0;
-    transition: opacity 75ms ease-in-out;
-}
-
 .nav-toggle:checked~nav {
     transform: scale(1);
 }
@@ -91,6 +77,12 @@ nav a {
 .nav-toggle:checked~nav a {
     opacity: 1;
     transition: opacity 150ms ease-in-out 200ms;
+}
+
+nav {
+    transform: scale(0, 1);
+    transition: all 300ms ease-in-out;
+    transform-origin: right;
 }
 
 .nav-bar {
@@ -104,6 +96,14 @@ nav a {
     position: absolute;
     list-style-type: none;
     width: 100%;
+}
+
+nav a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 75ms ease-in-out;
 }
 
 .nav-bar li:first-child {
@@ -190,7 +190,6 @@ nav a {
 /* Home-Testimonials */
 
 .home-testimonials {
-    margin-top: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;

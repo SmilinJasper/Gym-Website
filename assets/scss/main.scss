@@ -52,34 +52,32 @@ p {
 /* Navigation Bar */
 
 .nav-bar-header {
-    width: 75vw;
+    width: 100%;
     position: fixed;
     right: 0;
     text-transform: uppercase;
 }
 
-.fa-bars {
-    position: absolute;
-    top: .5em;
-    right: .5em;
-    z-index: 100;
-    color: white;
+.head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    color: #128AE6;
+    padding: 8px;
+}
+
+.company-logo {
+    height: 50px;
 }
 
 .nav-toggle {
     display: none;
 }
 
-.nav-toggle:checked~nav {
-    transform: scale(1);
-}
-
-.nav-toggle:checked~nav a {
-    opacity: 1;
-    transition: opacity 150ms ease-in-out 200ms;
-}
-
 nav {
+    width: 75vw;
     transform: scale(0, 1);
     transition: all 300ms ease-in-out;
     transform-origin: right;
@@ -112,6 +110,15 @@ nav a {
 
 .nav-bar li:not(:last-child) {
     padding-bottom: 12px;
+}
+
+.nav-toggle:checked~nav {
+    transform: scale(1);
+}
+
+.nav-toggle:checked~nav a {
+    opacity: 1;
+    transition: opacity 150ms ease-in-out 200ms;
 }
 
 

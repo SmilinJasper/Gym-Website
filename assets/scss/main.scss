@@ -1,6 +1,6 @@
 /* Variables */
 
-$primaryColor: #F4B131;
+$primaryColor: #53A7E8;
 $fontStack: 'Josefin Sans',
 sans-serif;
 
@@ -22,6 +22,21 @@ body {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.showcase-image-container {
+    position: relative;
+    display: flex;
+    margin-bottom: 2em;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15));
+    }
 }
 
 
@@ -56,6 +71,8 @@ p {
     position: fixed;
     right: 0;
     text-transform: uppercase;
+    transition: margin 300ms ease-in-out;
+    z-index: 1000;
 }
 
 .head {
@@ -81,7 +98,7 @@ nav {
     position: absolute;
     left: 25vw;
     transform: scale(0, 1);
-    transition: all 300ms ease-in-out;
+    transition: transform 300ms ease-in-out;
     transform-origin: right;
 }
 
@@ -121,6 +138,11 @@ nav a {
     transition: opacity 150ms ease-in-out 200ms;
 }
 
+.header--scrolled-down {
+    margin-top: -66px;
+    transition: margin 300ms ease-in-out;
+}
+
 
 /* Home Page Hero Section */
 
@@ -157,8 +179,10 @@ nav a {
     padding: 10px 30px;
 }
 
-.button:active {
+.button:active,
+.button:hover {
     background: $primaryColor;
+    cursor: pointer;
 }
 
 .button__join {

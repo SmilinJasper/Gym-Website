@@ -76,6 +76,10 @@ label {
   font-size: 0.9em;
 }
 
+i {
+  color: #53a7e8;
+}
+
 /* Navigation Bar */
 
 .nav-bar-header {
@@ -289,8 +293,7 @@ footer p {
   color: whitesmoke;
 }
 
-/* footer p,
-footer i {
+/* footer p {
   color: #aaa;
 }
  */
@@ -303,13 +306,6 @@ footer i {
   margin-top: 2em;
 }
 
-/* .contact-form-fieldset {
-  width: 70%;
-  padding: 1em;
-  border-radius: 8px;
-}
- */
-
 .contact-form {
   width: 100%;
 }
@@ -318,18 +314,23 @@ footer i {
   padding-bottom: 1em;
 }
 
-.field input {
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field input,
+.field textarea {
   width: calc(100% - 1.5em);
-  height: 44px;
   padding: 0px 8px;
   font-size: 1em;
   line-height: 2.25;
 }
 
-/* .field input:last-of-type{
-  height: ;
+.field input {
+  height: 44px;
 }
- */
+
 .contact-info {
   margin-top: 2em;
 }

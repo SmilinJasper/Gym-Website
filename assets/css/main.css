@@ -5,12 +5,12 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 html,
 body {
   min-height: 100%;
-  font-family: "Josefin Sans", sans-serif;
   text-align: center;
 }
 
@@ -68,6 +68,11 @@ p {
 cite {
   color: #3174f4;
   font-weight: bold;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 0.9em;
 }
 
 /* Navigation Bar */
@@ -374,10 +379,17 @@ footer i {
 }
 
 .field input {
-  width: calc(100% - 1.5rem);
+  width: calc(100% - 1.5em);
   height: 44px;
+  padding: 0px 8px;
+  font-size: 1em;
+  line-height: 2.25;
 }
 
+/* .field input:last-of-type{
+  height: ;
+}
+ */
 .contact-info {
   margin-top: 2em;
 }

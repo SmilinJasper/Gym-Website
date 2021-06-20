@@ -369,13 +369,6 @@ footer p {
 
 .contact-form {
   width: 100%;
-}
-
-.field:not(:last-child) {
-  padding-bottom: 1em;
-}
-
-.field {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -383,11 +376,32 @@ footer p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.field:not(:last-child) {
+  padding-bottom: 1em;
+}
+
+.field {
+  width: calc(100% - 1.5em);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .field input,
 .field textarea {
-  width: calc(100% - 1.5em);
+  width: 100%;
   padding: 0px 8px;
   font-size: 1em;
   line-height: 2.25;

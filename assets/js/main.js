@@ -1,5 +1,4 @@
 const navBarHeader = document.querySelector(".nav-bar-header");
-console.log(navBarHeader);
 
 const webPage = document.body;
 
@@ -16,18 +15,3 @@ window.addEventListener("scroll", () => {
 
     lastScrollTopPosition = scrollTopPosition == 0 ? 0 : scrollTopPosition;
 });
-
-/* webPage.addEventListener("wheel", (event) => {
-    console.log("scrolled");
-
-    if (wheelDirectionIsUp(event)) {
-        if (!navBarHeader.classList.contains("header--scrolled-down")) navBarHeader.classList.add("header--scrolled-down");
-    }
-    if (navBarHeader.classList.contains("header--scrolled-down")) navBarHeader.classList.remove("header--scrolled-down");
-})
-
-function wheelDirectionIsUp(event) {
-    console.log(event.wheelDelta);
-    if (event.wheelDelta && event.wheelDelta > 0) return true;
-    return false;
-} */

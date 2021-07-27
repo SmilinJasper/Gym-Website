@@ -1,8 +1,18 @@
 /* Variables */
 
 $primaryColor: #53a7e8;
+$secondaryColor: #e2853e;
 $fontStack: "Josefin Sans",
 sans-serif;
+
+/* Mixins */
+
+@mixin forDesktopOnly {
+    @media only screen and (min-width: 769px) {
+        @content;
+    }
+}
+
 
 /* Basic UI Elements */
 
@@ -28,7 +38,19 @@ img {
     height: auto;
 }
 
-.showcase-image-container {
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 98%;
+    @include forDesktopOnly {
+        margin-top: 2em;
+        flex-direction: row;
+    }
+}
+
+.showcase-image {
     position: relative;
     display: flex;
     margin-bottom: 2em;
@@ -40,6 +62,9 @@ img {
         width: 100%;
         height: 100%;
         background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15));
+    }
+    img {
+        width: 100%;
     }
 }
 
@@ -63,10 +88,21 @@ h3 {
     margin-bottom: 1em;
 }
 
+.title {
+    font-size: 48px;
+    span {
+        color: white;
+    }
+}
+
 p {
     color: gray;
     padding: 17px;
     line-height: 1.6em;
+}
+
+li {
+    list-style-type: none;
 }
 
 cite {
@@ -80,9 +116,33 @@ label {
 }
 
 i {
-    // color: #E06404;
-    // color: #FF6F00;
-    color: #e2853e;
+    color: $secondaryColor;
+}
+
+
+/* Buttons */
+
+.button {
+    font-family: $fontStack;
+    text-transform: uppercase;
+    background: transparent;
+    color: white;
+    border: 3px solid $primaryColor;
+    padding: 10px 30px;
+    transition: 100ms ease-in-out;
+}
+
+.button:active,
+.button:hover {
+    background: $primaryColor;
+    cursor: pointer;
+}
+
+.button__join {
+    @extend .button;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 25px;
 }
 
 
@@ -122,6 +182,13 @@ nav {
     transform: scale(0, 1);
     transition: transform 300ms ease-in-out;
     transform-origin: right;
+    a {
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        opacity: 0;
+        transition: opacity 75ms ease-in-out;
+    }
 }
 
 .nav-bar {
@@ -132,15 +199,6 @@ nav {
     grid-gap: 8px;
     padding-left: 50px;
     text-align: start;
-    list-style-type: none;
-}
-
-nav a {
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-    opacity: 0;
-    transition: opacity 75ms ease-in-out;
 }
 
 .nav-bar li:first-child {
@@ -180,39 +238,6 @@ nav a {
     font-size: 3em;
 }
 
-.home-hero h1 {
-    font-size: 48px;
-    color: white;
-}
-
-.home-hero h1 span {
-    color: $primaryColor;
-}
-
-
-/* Buttons */
-
-.button {
-    font-family: $fontStack;
-    text-transform: uppercase;
-    background: transparent;
-    color: white;
-    border: 3px solid $primaryColor;
-    padding: 10px 30px;
-}
-
-.button:active,
-.button:hover {
-    background: $primaryColor;
-    cursor: pointer;
-}
-
-.button__join {
-    font-size: 24px;
-    font-weight: 600;
-    border-radius: 25px;
-}
-
 
 /* Home Page What We Offer Section */
 
@@ -220,6 +245,7 @@ nav a {
     margin-top: 2em;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .perk-item {
@@ -250,6 +276,7 @@ nav a {
 }
 
 .testimonial {
+    position: relative;
     width: 270px;
     height: auto;
     padding: 1.5em 0em;
@@ -257,6 +284,7 @@ nav a {
     display: flex;
     flex-direction: column;
     grid-gap: 20px;
+    transition: 200ms ease-in-out;
 }
 
 .testimonial:hover {
@@ -291,31 +319,30 @@ blockquote p {
 /* Footer */
 
 footer {
+    margin-top: 2em;
     background: rgba(17, 17, 17, 1);
     color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    grid-gap: 2em;
+    display: grid;
+    grid-template: "contact-us" "social-media-links" "bottom-copyright-statement";
+    grid-gap: 4em;
+    @include forDesktopOnly {
+        grid-template-areas: "contact-us social-media-links" "bottom-copyright-statement bottom-copyright-statement";
+    }
+    p {
+        color: whitesmoke;
+    }
 }
 
-footer p {
-    color: whitesmoke;
-}
 
-
-/* footer p {
-  color: #aaa;
-}
- */
+/* Footer Contact Form Section */
 
 .footer-contact-section {
+    grid-area: contact-us;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 2em;
+    margin-top: 4em;
 }
 
 .contact-form {
@@ -335,33 +362,77 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    input {
+        height: 44px;
+    }
+    input,
+    textarea {
+        width: 100%;
+        padding: 0px 8px;
+        font-size: 1em;
+        line-height: 2.25;
+        border: 1.5px solid #913f00;
+    }
+    input:focus,
+    textarea:focus {
+        outline: none;
+    }
 }
 
-.field input,
-.field textarea {
-    width: 100%;
-    padding: 0px 8px;
-    font-size: 1em;
-    line-height: 2.25;
-    // border: 2px solid #CD5900;
-    // border: 2px solid #E26301;
-    border: 1.5px solid #913f00;
-}
-
-.field input:focus,
-.field textarea:focus {
-    outline: none;
-}
-
-.field input {
-    height: 44px;
-}
-
-.contact-info {
+.contact-info-container {
     margin-top: 2em;
+    p {
+        display: inline-flex;
+        padding: 0;
+    }
 }
 
-.contact-info p {
-    display: inline-flex;
-    padding: 0;
+.contact-info:not(:last-child) {
+    padding-bottom: 0.3em;
+}
+
+
+/* Footer Connect With Us Section */
+
+.footer-connect-with-us-section {
+    @include forDesktopOnly {
+        margin-top: 4em;
+    }
+}
+
+.social-media-links {
+    grid-area: social-media-links;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    ul {
+        width: 35%;
+        display: flex;
+        justify-content: center;
+        grid-gap: 1em;
+    }
+}
+
+.social-media-icon {
+    height: 32px;
+    width: 32px;
+    display: inline-grid;
+    place-items: center;
+    background-color: white;
+    border-radius: 25px;
+    transition: 100ms ease-in-out;
+}
+
+.social-media-icon:hover,
+.social-media-icon:active {
+    color: white;
+    background-color: $secondaryColor;
+}
+
+
+/* Footer Bottom Copyright Section */
+
+.footer-bottom-copyright {
+    grid-area: bottom-copyright-statement;
+    padding-bottom: 1em;
 }

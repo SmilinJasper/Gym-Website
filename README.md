@@ -20,4 +20,4 @@ Project is created with:
 * CSS3
 	
 ## Setup
-To run this project, launcg=h index.html on your browser or run the index.html file on a local server 
+To run this project, launch index.html on your browser or run the index.html file on a local server 

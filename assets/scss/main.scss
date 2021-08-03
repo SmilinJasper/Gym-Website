@@ -371,12 +371,30 @@ footer {
         padding: 0px 8px;
         font-size: 1em;
         line-height: 2.25;
-        border: 1.5px solid #913f00;
+        border: 2px solid #913f00;
     }
     input:focus,
     textarea:focus {
         outline: none;
     }
+}
+
+.button__send-message {
+    height: 48px;
+    width: 170px;
+    border: 2px solid #913f00;
+    background: white;
+    color: #913f00;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: ease-in-out 200ms;
+}
+
+.button__send-message:hover {
+    cursor: pointer;
+    border: 2px solid #e2853e;
+    color: #e2853e;
 }
 
 .contact-info-container {

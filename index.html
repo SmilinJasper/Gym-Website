@@ -11,6 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="icon" href="assets/images/favicon.png" type="image/icon type">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="assets/js/email_js_initialization.js"></script>
+    <script defer type="text/javascript" src="assets/js/email_js_service.js"></script>
     <script defer src="assets/js/main.js"></script>
     <title>ESH FItness</title>
 </head>
@@ -188,7 +191,8 @@
                 Contact Us
             </h2>
 
-            <form action="POST" class="contact-form">
+            <form action="POST" id="contact-form" class="contact-form">
+
                 <div class="field">
                     <label for="from-name">Name</label>
                     <input id="from-name" name="from-name" type="text">
@@ -201,6 +205,9 @@
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="3"></textarea>
                 </div>
+
+                <input type="submit" id="send-message-button" class="button__send-message" value="Send Message">
+
             </form>
 
             <div class="contact-info-container">

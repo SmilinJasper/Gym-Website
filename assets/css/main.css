@@ -461,6 +461,7 @@ footer p {
   height: 48px;
   width: 170px;
   border: 2px solid #913f00;
+  line-height: 48px;
   background: white;
   color: #913f00;
   font-size: 0.9rem;

@@ -1,0 +1,98 @@
+/* Navigation Bar */
+
+.nav-bar-header {
+    width: 100%;
+    position: fixed;
+    right: 0;
+    text-transform: uppercase;
+    -webkit-transition: margin 300ms ease-in-out;
+    transition: margin 300ms ease-in-out;
+    z-index: 1000;
+}
+
+.head {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: white;
+    color: #128ae6;
+    padding: 8px;
+}
+
+.company-logo {
+    height: 50px;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+nav {
+    width: 75vw;
+    position: absolute;
+    left: 25vw;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transition: -webkit-transform 300ms ease-in-out;
+    transition: -webkit-transform 300ms ease-in-out;
+    transition: transform 300ms ease-in-out;
+    transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+    -webkit-transform-origin: right;
+    transform-origin: right;
+}
+
+nav a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    opacity: 0;
+    -webkit-transition: opacity 75ms ease-in-out;
+    transition: opacity 75ms ease-in-out;
+}
+
+.nav-bar {
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    grid-gap: 8px;
+    padding-left: 50px;
+    text-align: start;
+}
+
+.nav-bar li:first-child {
+    margin-top: 4.5em;
+}
+
+.nav-bar li:not(:last-child) {
+    padding-bottom: 12px;
+}
+
+.nav-toggle:checked~nav {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.nav-toggle:checked~nav a {
+    opacity: 1;
+    -webkit-transition: opacity 150ms ease-in-out 200ms;
+    transition: opacity 150ms ease-in-out 200ms;
+}
+
+.header--scrolled-down {
+    margin-top: -66px;
+    -webkit-transition: margin 300ms ease-in-out;
+    transition: margin 300ms ease-in-out;
+}

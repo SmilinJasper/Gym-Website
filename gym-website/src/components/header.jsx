@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './header.css'
 
 class Header extends Component {
     state = {  }
@@ -21,16 +22,16 @@ class Header extends Component {
                 <a href="index.html">Home</a>
             </li>   
             <li>
-                <a href="#">Locations</a>
+                <a href="index.html">Locations</a>
             </li>
             <li>
-                <a href="#">Our Trainers</a>
+                <a href="index.html">Our Trainers</a>
             </li>
             <li>
-                <a href="#">Shop</a>
+                <a href="index.html">Shop</a>
             </li>
             <li>
-                <a href="#">Contact Us</a>
+                <a href="index.html">Contact Us</a>
             </li>
         </ul>
     </nav>

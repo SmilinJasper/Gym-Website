@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './homeHeroSection.css';
 
 class HomeHeroSection extends Component {
     state = {  }
@@ -12,7 +13,7 @@ class HomeHeroSection extends Component {
         FITNESS
     </h1>
 
-    <a href="#"><button class="button__join">Join Now</button></a>
+    <a href="index.html"><button class="button__join">Join Now</button></a>
 
 </section>
 

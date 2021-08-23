@@ -14,7 +14,7 @@ class Header extends Component {
     <label for="nav-toggle" className="fas fa-bars fa-2x"></label>
     </div>
 
-    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <input type="checkbox" id="nav-toggle" className="nav-toggle" />
 
     <nav role="navigation">
         <ul className="nav-bar">

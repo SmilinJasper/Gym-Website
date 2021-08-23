@@ -6,14 +6,14 @@ class HomeHeroSection extends Component {
     render() { 
         return ( <React.Fragment>
 
-<section class="home-hero">
+<section className="home-hero">
 
-    <h1 class="title">
+    <h1 className="title">
         <span>ESH</span><br />
         FITNESS
     </h1>
 
-    <a href="index.html"><button class="button__join">Join Now</button></a>
+    <a href="index.html"><button className="button__join">Join Now</button></a>
 
 </section>
 

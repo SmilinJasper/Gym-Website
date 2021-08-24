@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PerkItem from './perkItem';
 import './whatWeOfferSection.css';
 
 class WhatWeOfferSection extends Component {
@@ -6,7 +7,7 @@ class WhatWeOfferSection extends Component {
     render() { 
         return ( <>
 
-        <section className="home-perks">
+        <section className='home-perks'>
 
             <header>
                 <h1>WHAT WE <br />
@@ -14,19 +15,26 @@ class WhatWeOfferSection extends Component {
                 </h1>
             </header>
 
-            <div className="container">
+            <div className='container'>
 
-                <figure className="perk-item">
-                    <img className="perk-item-image perk-item-image--big" src='/images/personal_training_icon.png' alt="Personal Training in Sulur, Coimbatore, Tamilnadu, India" />
-                    <figcaption className="perk-description">
-                        <h3>PERSONAL TRAINING</h3>
-                        <p>Our training programs are designed specifically for each individual client to help them achive their goals faster.</p>
-                    </figcaption>
-                </figure>
+                <PerkItem 
+                    src='/images/personal_training_icon.png' 
+                    alt='Personal Training in Sulur, Coimbatore, Tamilnadu, India'
+                    // imageStyle=''
+                    title='PERSONAL TRAINING'
+                    description ='Our training programs are designed specifically for each individual client to help them achive their goals faster.'
+                />
 
-                <figure className="perk-item">
-                    <img className="perk-item-image" src="/images/community-man.svg" alt="Group Fitness Classes in Sulur, Coimbatore, Tamilnadu, India" />
-                    <figcaption className="perk-description">
+                {/* <PerkItem 
+                    src='/images/community-man.svg' 
+                    alt='Group Fitness Classes in Sulur, Coimbatore, Tamilnadu, India' 
+                    title='GROUP FITNESS CLASSES'
+                    description ='Our group fitness classes offer a blend of both resistance based and cardio training for best overall health.'
+                /> */}
+
+                <figure className='perk-item'>
+                    <img className='perk-item-image' src='/images/community-man.svg' alt='Group Fitness Classes in Sulur, Coimbatore, Tamilnadu, India' />
+                    <figcaption className='perk-description'>
                         <h3>
                             GROUP FITNESS CLASSES
                         </h3>
@@ -36,9 +44,9 @@ class WhatWeOfferSection extends Component {
                     </figcaption>
                 </figure>
 
-                <figure className="perk-item">
-                    <img className="perk-item-image" src="/images/24-7-icon.png" alt="24/7 Gym in Sulur, Coimbatore, Tamilnadu, India" />
-                    <figcaption className="perk-description">
+                <figure className='perk-item'>
+                    <img className='perk-item-image' src='/images/24-7-icon.png' alt='24/7 Gym in Sulur, Coimbatore, Tamilnadu, India' />
+                    <figcaption className='perk-description'>
                         <h3>
                             24/7 SERVICE
                         </h3>
@@ -48,9 +56,9 @@ class WhatWeOfferSection extends Component {
                     </figcaption>
                 </figure>
 
-                <figure className="perk-item">
-                    <img className="perk-item-image" src="/images/nutritious-food.png" alt="Nutritional Plans Offered in Sulur, Coimbatore, Tamilnadu, India" />
-                    <figcaption className="perk-description">
+                <figure className='perk-item'>
+                    <img className='perk-item-image' src='/images/nutritious-food.png' alt='Nutritional Plans Offered in Sulur, Coimbatore, Tamilnadu, India' />
+                    <figcaption className='perk-description'>
                         <h3>
                             NUTRITIONAL PLANS
                         </h3>

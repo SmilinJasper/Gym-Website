@@ -20,7 +20,7 @@ class WhatWeOfferSection extends Component {
                 <PerkItem 
                     src='/images/personal_training_icon.png' 
                     alt='Personal Training in Sulur, Coimbatore, Tamilnadu, India'
-                    // imageStyle=''
+                    imageSize='perk-item-image--big'
                     title='PERSONAL TRAINING'
                     description ='Our training programs are designed specifically for each individual client to help them achive their goals faster.'
                 />

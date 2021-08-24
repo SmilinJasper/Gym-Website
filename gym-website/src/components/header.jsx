@@ -10,7 +10,7 @@ class Header extends Component {
 <header className="nav-bar-header">
 
     <div className="head">
-    <img className="company-logo" src="assets/images/logo.png" alt="ESH Fitness Gym, Sulur, Coimbatore, Tamilnadu, India Logo" />
+    <img className="company-logo" src="/images/logo.png" alt="ESH Fitness Gym, Sulur, Coimbatore, Tamilnadu, India Logo" />
     <label for="nav-toggle" className="fas fa-bars fa-2x"></label>
     </div>
 

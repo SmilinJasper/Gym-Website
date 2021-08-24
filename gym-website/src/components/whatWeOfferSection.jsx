@@ -17,7 +17,7 @@ class WhatWeOfferSection extends Component {
             <div className="container">
 
                 <figure className="perk-item">
-                    <img className="perk-item-image perk-item-image--big" src={require('../assets/images/personal_training_icon.png')} alt="Personal Training in Sulur, Coimbatore, Tamilnadu, India" />
+                    <img className="perk-item-image perk-item-image--big" src='/images/personal_training_icon.png' alt="Personal Training in Sulur, Coimbatore, Tamilnadu, India" />
                     <figcaption className="perk-description">
                         <h3>PERSONAL TRAINING</h3>
                         <p>Our training programs are designed specifically for each individual client to help them achive their goals faster.</p>
@@ -25,7 +25,7 @@ class WhatWeOfferSection extends Component {
                 </figure>
 
                 <figure className="perk-item">
-                    <img className="perk-item-image" src="../assets/images/community-man.svg" alt="Group Fitness Classes in Sulur, Coimbatore, Tamilnadu, India" />
+                    <img className="perk-item-image" src="/images/community-man.svg" alt="Group Fitness Classes in Sulur, Coimbatore, Tamilnadu, India" />
                     <figcaption className="perk-description">
                         <h3>
                             GROUP FITNESS CLASSES
@@ -37,7 +37,7 @@ class WhatWeOfferSection extends Component {
                 </figure>
 
                 <figure className="perk-item">
-                    <img className="perk-item-image" src="../assets/images/24-7-icon.png" alt="24/7 Gym in Sulur, Coimbatore, Tamilnadu, India" />
+                    <img className="perk-item-image" src="/images/24-7-icon.png" alt="24/7 Gym in Sulur, Coimbatore, Tamilnadu, India" />
                     <figcaption className="perk-description">
                         <h3>
                             24/7 SERVICE
@@ -49,7 +49,7 @@ class WhatWeOfferSection extends Component {
                 </figure>
 
                 <figure className="perk-item">
-                    <img className="perk-item-image" src="../assets/images/nutritious-food.png" alt="Nutritional Plans Offered in Sulur, Coimbatore, Tamilnadu, India" />
+                    <img className="perk-item-image" src="/images/nutritious-food.png" alt="Nutritional Plans Offered in Sulur, Coimbatore, Tamilnadu, India" />
                     <figcaption className="perk-description">
                         <h3>
                             NUTRITIONAL PLANS

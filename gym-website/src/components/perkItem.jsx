@@ -7,7 +7,6 @@ class PerkItem extends Component {
         super(props);
     }
 
-
     state = {  }
 
     render() { 

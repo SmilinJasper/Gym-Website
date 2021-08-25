@@ -61,10 +61,10 @@ window.onload = () => {
 
         let scrollTopPosition = window.pageYOffset || document.documentElement.scrollTopPosition;
 
-        if (scrollTopPosition < lastScrollTopPosition || !scrollTopPosition) {
-            if (navBarHeaderIsRetracted) return addNavBarHeader();
-        } else {
+        if (scrollTopPosition > lastScrollTopPosition) {
             if (!navBarHeaderIsRetracted) return removeNavBarHeader();
+        } else {
+            if (navBarHeaderIsRetracted) return addNavBarHeader();
         }
 
     lastScrollTopPosition = scrollTopPosition === 0 ? 0 : scrollTopPosition;

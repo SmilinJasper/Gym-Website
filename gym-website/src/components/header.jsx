@@ -45,17 +45,26 @@ class Header extends Component {
 window.onload = () => {
     
     let lastScrollTopPosition = 0;
+    const navBarHeader = document.querySelector(".nav-bar-header");
+
+    function removeNavBarHeader(){
+        navBarHeader.classList.add("header--scrolled-down");
+    }
+
+    function addNavBarHeader(){
+        navBarHeader.classList.remove("header--scrolled-down");
+    }
 
     window.addEventListener("scroll", () => {
 
-        const navBarHeader = document.querySelector(".nav-bar-header");
+        const navBarHeaderIsRetracted = navBarHeader.classList.contains("header--scrolled-down");
 
         let scrollTopPosition = window.pageYOffset || document.documentElement.scrollTopPosition;
 
         if (scrollTopPosition < lastScrollTopPosition || !scrollTopPosition) {
-            if (navBarHeader.classList.contains("header--scrolled-down")) return navBarHeader.classList.remove("header--scrolled-down");
+            if (navBarHeaderIsRetracted) return addNavBarHeader();
         } else {
-            if (!navBarHeader.classList.contains("header--scrolled-down")) return navBarHeader.classList.add("header--scrolled-down");
+            if (!navBarHeaderIsRetracted) return removeNavBarHeader();
         }
 
     lastScrollTopPosition = scrollTopPosition === 0 ? 0 : scrollTopPosition;

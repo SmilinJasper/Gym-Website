@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PerkItem from './perkItem';
+import PersonalTrainingShowcaseSection from './personalTrainingShowcaseSection';
 import './whatWeOfferSection.css';
 
 class WhatWeOfferSection extends Component {
@@ -45,11 +46,11 @@ class WhatWeOfferSection extends Component {
                     title='NUTRITIONAL PLANS'
                     description ='Just simple low-calorie dense, high volume deliciousness that will keep you energized and help you lose fat and build muscle.'
                 />
-
+           
             </div>
 
         </section>
-
+        
         </> );
     }
 }

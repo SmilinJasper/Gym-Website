@@ -1,6 +1,5 @@
 const navBarHeader = document.querySelector(".nav-bar-header");
 
-const webPage = document.body;
 
 let lastScrollTopPosition = 0;
 

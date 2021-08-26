@@ -52,7 +52,7 @@ window.onload = () => {
     }
 
     function addNavBarHeader(){
-        navBarHeader.classList.remove("header--scrolled-down");
+        navBarHeader.classList.remove("+header--scrolled-down");
     }
 
     window.addEventListener("scroll", () => {

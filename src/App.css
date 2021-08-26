@@ -1,0 +1,155 @@
+/* Basic UI Elements */
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+html,
+body {
+    min-height: 100%;
+    text-align: center;
+}
+
+section {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 98%;
+}
+
+@media only screen and (min-width: 769px) {
+    .container {
+        margin-top: 2em;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+}
+
+.showcase-image {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.showcase-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.15)), to(rgba(0, 0, 0, 0.15)));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15));
+}
+
+.showcase-image img {
+    width: 100%;
+}
+
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
+h1 {
+    color: #53a7e8;
+    font-size: 40px;
+    line-height: 1.1em;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 1em;
+}
+
+.title {
+    font-size: 48px;
+}
+
+.title span {
+    color: white;
+}
+
+p {
+    color: gray;
+    padding: 17px;
+    line-height: 1.6em;
+}
+
+li {
+    list-style-type: none;
+}
+
+cite {
+    color: #3174f4;
+    font-weight: bold;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+i {
+    color: #e2853e;
+}
+
+
+/* Buttons */
+
+.button,
+.button__join {
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    background: transparent;
+    color: white;
+    border: 3px solid #53a7e8;
+    padding: 10px 30px;
+    -webkit-transition: 100ms ease-in-out;
+    transition: 100ms ease-in-out;
+}
+
+.button:active,
+.button__join:active,
+.button:hover,
+.button__join:hover {
+    background: #53a7e8;
+    cursor: pointer;
+}
+
+.button__join {
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 25px;
+}

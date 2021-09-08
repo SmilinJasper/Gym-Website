@@ -1,44 +1,36 @@
 import React, { Component } from 'react'
+import { BrowserRouter as Router, NavLink } from 'react-router-dom';
 import './header.css'
 
 class Header extends Component {
     state = {  }
 
     render() { 
-        return ( <React.Fragment>
+        return ( 
 
-<header className="nav-bar-header">
+            <Router>
+                <header className="nav-bar-header">
 
-    <div className="head">
-    <img className="company-logo" src="/images/logo.png" alt="ESH Fitness Gym, Sulur, Coimbatore, Tamilnadu, India Logo" />
-    <label for="nav-toggle" className="fas fa-bars fa-2x"></label>
-    </div>
+                    <div className="head">
+                        <img className="company-logo" src="/images/logo.png" alt="ESH Fitness Gym, Sulur, Coimbatore, Tamilnadu, India Logo" />
+                        <label for="nav-toggle" className="fas fa-bars fa-2x"></label>
+                    </div>
 
-    <input type="checkbox" id="nav-toggle" className="nav-toggle" />
+                    <input type="checkbox" id="nav-toggle" className="nav-toggle" />
 
-    <nav role="navigation">
-        <ul className="nav-bar">
-            <li>
-                <a href="index.html">Home</a>
-            </li>   
-            <li>
-                <a href="index.html">Locations</a>
-            </li>
-            <li>
-                <a href="index.html">Our Trainers</a>
-            </li>
-            <li>
-                <a href="index.html">Shop</a>
-            </li>
-            <li>
-                <a href="index.html">Contact Us</a>
-            </li>
-        </ul>
-    </nav>
+                    <nav role="navigation">
+                        <ul className="nav-bar">
+                            <li><NavLink to='index.html'>Home</NavLink></li>
+                            <li><NavLink to='index.html'>Locations</NavLink></li> 
+                            <li><NavLink to='index.html'>Our Trainers</NavLink></li> 
+                            <li><NavLink to='index.html'>Shop</NavLink></li> 
+                            <li><NavLink to='index.html'>Contact Us</NavLink></li> 
+                        </ul>
+                    </nav>
 
-</header>
-
-        </React.Fragment> );
+                </header>
+            </Router>
+        );
     }
 }
 
@@ -52,7 +44,7 @@ window.onload = () => {
     }
 
     function addNavBarHeader(){
-        navBarHeader.classList.remove("+header--scrolled-down");
+        navBarHeader.classList.remove("header--scrolled-down");
     }
 
     window.addEventListener("scroll", () => {

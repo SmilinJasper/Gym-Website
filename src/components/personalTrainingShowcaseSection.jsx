@@ -7,15 +7,16 @@ class PersonalTrainingShowcaseSection extends Component {
     
     render() { 
         return ( 
+
             <section>
 
                <ShowcaseImage imageSource='/images/personal_trainer_training_client.jpg'>
                </ShowcaseImage>
 
             </section>
-         );
-    }
 
+        );
+    }
 }
  
 export default PersonalTrainingShowcaseSection;

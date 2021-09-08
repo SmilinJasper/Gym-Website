@@ -6,7 +6,7 @@ import './whatWeOfferSection.css';
 class WhatWeOfferSection extends Component {
     state = {  }
     render() { 
-        return ( <>
+        return (
 
         <section className='home-perks'>
 
@@ -51,7 +51,7 @@ class WhatWeOfferSection extends Component {
 
         </section>
         
-        </> );
+        );
     }
 }
  

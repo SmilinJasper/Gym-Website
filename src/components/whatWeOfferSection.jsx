@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PerkItem from './perkItem';
-import PersonalTrainingShowcaseSection from './personalTrainingShowcaseSection';
 import './whatWeOfferSection.css';
 
 class WhatWeOfferSection extends Component {

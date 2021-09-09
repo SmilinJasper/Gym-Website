@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-import Header from './components/header';
-import HomeHeroSection from './components/homeHeroSection';
 import './App.css';
-import WhatWeOfferSection from './components/whatWeOfferSection';
-import PersonalTrainingShowcaseSection from './components/personalTrainingShowcaseSection';
-import ClientTestimonialSection from './components/clientTestimonialsSection';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './components/pages/home';
 
 class App extends Component {
 
@@ -14,11 +11,17 @@ class App extends Component {
     return ( 
 
       <main>
-        <Header />
-        <HomeHeroSection />
-        <WhatWeOfferSection />
-        <PersonalTrainingShowcaseSection />
-        <ClientTestimonialSection />
+        
+        <Router>
+
+        <Switch>
+
+          <Route path='/' exact strict component={Home} />
+
+        </Switch>
+
+        </Router>
+
       </main> 
       
     );

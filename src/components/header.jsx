@@ -9,6 +9,7 @@ class Header extends Component {
         return ( 
 
             <Router>
+                
                 <header className="nav-bar-header">
 
                     <div className="head">
@@ -18,9 +19,9 @@ class Header extends Component {
 
                     <input type="checkbox" id="nav-toggle" className="nav-toggle" />
 
-                    <nav role="navigation">
+                    <nav>
                         <ul className="nav-bar">
-                            <li><NavLink to='index.html'>Home</NavLink></li>
+                            <li><NavLink to='/'>Home</NavLink></li>
                             <li><NavLink to='index.html'>Locations</NavLink></li> 
                             <li><NavLink to='index.html'>Our Trainers</NavLink></li> 
                             <li><NavLink to='index.html'>Shop</NavLink></li> 
@@ -29,7 +30,9 @@ class Header extends Component {
                     </nav>
 
                 </header>
+
             </Router>
+
         );
     }
 }

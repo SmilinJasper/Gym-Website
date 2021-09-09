@@ -8,7 +8,11 @@ class ShowcaseImage extends Component {
     render() { 
         return (
 
-            <img class='showcase-image' src= {this.props.imageSource} alt='Personal Training in Sulur, Coimbatore, Tamilnadu, India'/>
+            <img 
+            class='showcase-image' 
+            src= {this.props.imageSource} 
+            alt='Personal Training in Sulur, Coimbatore, Tamilnadu, India'
+            />
             
         );
     }

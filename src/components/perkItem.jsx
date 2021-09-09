@@ -15,7 +15,11 @@ class PerkItem extends Component {
         
         <figure className='perk-item'>
 
-        <img className= {`perk-item-image ${this.checkImageSize}`} src={this.props.imageSrc} alt={this.props.imageAlt} />
+        <img 
+        className= {`perk-item-image ${this.checkImageSize}`} 
+        src={this.props.imageSrc} 
+        alt={this.props.imageAlt} 
+        />
         
         <figcaption className='perk-description'>
             <h3>{this.props.title}</h3>

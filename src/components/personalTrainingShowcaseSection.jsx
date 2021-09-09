@@ -10,9 +10,8 @@ class PersonalTrainingShowcaseSection extends Component {
 
             <section>
 
-               <ShowcaseImage imageSource='/images/personal_trainer_training_client.jpg'>
-               </ShowcaseImage>
-
+               <ShowcaseImage imageSource='/images/personal_trainer_training_client.jpg' />
+               
             </section>
 
         );

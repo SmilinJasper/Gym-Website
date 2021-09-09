@@ -4,6 +4,7 @@ import './whatWeOfferSection.css';
 
 class WhatWeOfferSection extends Component {
     state = {  }
+    
     render() { 
         return (
 

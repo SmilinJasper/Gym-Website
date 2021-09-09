@@ -22,7 +22,7 @@ class PerkItem extends Component {
             <p>{this.props.description}</p>
         </figcaption>
 
-    </figure> 
+        </figure> 
         
         );
     }

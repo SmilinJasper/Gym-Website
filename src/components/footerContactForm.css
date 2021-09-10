@@ -1,0 +1,85 @@
+.contact-form {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.field:not(:last-child) {
+    padding-bottom: 1em;
+}
+
+.field {
+    width: calc(100% - 1.5em);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.field input {
+    height: 44px;
+}
+
+.field input,
+.field textarea {
+    width: 100%;
+    padding: 0px 8px;
+    font-size: 1em;
+    line-height: 2.25;
+    border: 2px solid #913f00;
+}
+
+.field input:focus,
+.field textarea:focus {
+    outline: none;
+}
+
+.button__send-message {
+    height: 48px;
+    width: 170px;
+    border: 2px solid #913f00;
+    line-height: 48px;
+    background: white;
+    color: #913f00;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-transition: ease-in-out 200ms;
+    transition: ease-in-out 200ms;
+}
+
+.button__send-message:hover {
+    cursor: pointer;
+    border: 2px solid #e2853e;
+    color: #e2853e;
+}
+
+.contact-info-container {
+    margin-top: 2em;
+}
+
+.contact-info-container p {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 0;
+}
+
+.contact-info:not(:last-child) {
+    padding-bottom: 0.3em;
+}

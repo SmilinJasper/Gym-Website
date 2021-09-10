@@ -1,0 +1,21 @@
+/* Footer */
+
+footer {
+    margin-top: 2em;
+    background: #111111;
+    color: whitesmoke;
+    display: -ms-grid;
+    display: grid;
+    grid-template: "contact-us" "social-media-links" "bottom-copyright-statement";
+    grid-gap: 4em;
+}
+
+@media only screen and (min-width: 769px) {
+    footer {
+        grid-template-areas: "contact-us social-media-links" "bottom-copyright-statement bottom-copyright-statement";
+    }
+}
+
+footer p {
+    color: whitesmoke;
+}

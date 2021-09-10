@@ -4,6 +4,7 @@ import HomeHeroSection from '../homeHeroSection';
 import WhatWeOfferSection from '../whatWeOfferSection';
 import PersonalTrainingShowcaseSection from '../personalTrainingShowcaseSection';
 import ClientTestimonialSection from '../clientTestimonialsSection';
+import Footer from '../footer';
 
 class Home extends Component {
 
@@ -18,6 +19,7 @@ class Home extends Component {
         <WhatWeOfferSection />
         <PersonalTrainingShowcaseSection />
         <ClientTestimonialSection />
+        <Footer />
       </main> 
       
     );

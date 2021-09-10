@@ -7,7 +7,7 @@ class FooterContactForm extends Component {
 
         <React.Fragment>
 
-            <form action="POST" id="contact-form" class="contact-form">
+            <form action="POST" id="contact-form" class="footer-contact-form">
 
             <div class="field">
                 <label for="from-name">Name</label>

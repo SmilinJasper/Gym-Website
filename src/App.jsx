@@ -10,8 +10,6 @@ class App extends Component {
   render() { 
     return ( 
 
-      <main>
-        
         <Router>
 
         <Switch>
@@ -22,8 +20,6 @@ class App extends Component {
 
         </Router>
 
-      </main> 
-      
     );
   }
 

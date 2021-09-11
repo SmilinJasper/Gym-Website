@@ -1,0 +1,18 @@
+address {
+    font-style: normal;
+}
+
+.footer-address-section {
+    margin-top: 2em;
+}
+
+.address-info p {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 0;
+}
+
+.address-info:not(:last-child) {
+    padding-bottom: 0.3em;
+}

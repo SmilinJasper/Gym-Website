@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import FooterAddressSection from './footerAddressSection';
 import FooterContactForm from './footerContactForm';
 import './footerContactUsSection.css'
 
@@ -15,6 +16,7 @@ class FooterContactUsSection extends Component {
             </h2>
 
             <FooterContactForm />
+            <FooterAddressSection />
 
             </section>
         

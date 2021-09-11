@@ -68,18 +68,3 @@
     border: 2px solid #e2853e;
     color: #e2853e;
 }
-
-.contact-info-container {
-    margin-top: 2em;
-}
-
-.contact-info-container p {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    padding: 0;
-}
-
-.contact-info:not(:last-child) {
-    padding-bottom: 0.3em;
-}

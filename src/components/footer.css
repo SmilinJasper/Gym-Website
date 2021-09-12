@@ -17,5 +17,20 @@ footer {
 }
 
 footer p {
+    margin-left: .5rem;
+    padding: 0;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     color: whitesmoke;
+}
+
+footer a {
+    margin-left: .5rem;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: hsl(206, 76%, 72%);
 }

@@ -24,16 +24,16 @@ class FooterAddressSection extends Component {
 
                 <div class="address-info">
                     <i class="fa fa-phone" aria-hidden="true"></i>
-                    <p>
-                        9875661852
-                    </p>
+                    <a href='tel:9875661852'>
+                    9875661852
+                    </a>
                 </div>
 
                 <div class="address-info">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <p>
-                       contact@eshfitness.com
-                    </p>
+                    <a href='mailto:contact@eshfitness.com'>
+                    contact@eshfitness.com
+                    </a>
                 </div>
 
             </address>

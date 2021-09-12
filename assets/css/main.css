@@ -82,7 +82,7 @@ h3 {
 }
 
 h1 {
-  color: #53a7e8;
+  color: #3dabff;
   font-size: 40px;
   line-height: 1.1em;
 }
@@ -130,7 +130,7 @@ i {
   text-transform: uppercase;
   background: transparent;
   color: white;
-  border: 3px solid #53a7e8;
+  border: 3px solid #3dabff;
   padding: 10px 30px;
   -webkit-transition: 100ms ease-in-out;
   transition: 100ms ease-in-out;
@@ -139,7 +139,7 @@ i {
 .button:active, .button__join:active,
 .button:hover,
 .button__join:hover {
-  background: #53a7e8;
+  background: #3dabff;
   cursor: pointer;
 }
 

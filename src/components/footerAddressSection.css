@@ -9,3 +9,18 @@ address {
 .address-info:not(:last-child) {
     padding-bottom: 0.3em;
 }
+
+.address-info p {
+    margin-left: .5rem;
+    padding: 0;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    color: whitesmoke;
+}
+
+.address-info a {
+    margin-left: .5rem;
+    color: whitesmoke;
+    text-decoration: none;
+}

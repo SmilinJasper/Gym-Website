@@ -41,7 +41,7 @@
     padding: 0px 8px;
     font-size: 1em;
     line-height: 2.25;
-    border: 2px solid #913f00;
+    border: 1.5px solid #913f00;
 }
 
 .field input:focus,
@@ -52,7 +52,7 @@
 .button__send-message {
     height: 48px;
     width: 170px;
-    border: 2px solid #913f00;
+    border: 1.5px solid #913f00;
     line-height: 48px;
     background: white;
     color: #913f00;
@@ -65,6 +65,6 @@
 
 .button__send-message:hover {
     cursor: pointer;
-    border: 2px solid #e2853e;
+    border: 1.5px solid #e2853e;
     color: #e2853e;
 }

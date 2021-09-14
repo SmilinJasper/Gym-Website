@@ -29,9 +29,9 @@ class FooterAddressSection extends Component {
                     </a>
                 </div>
 
-                <div class="address-info">
+                <div class="address-info address-info__email">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <a href='mailto:contact@eshfitness.com'>
+                    <a class='footer-contact-email-link' href='mailto:contact@eshfitness.com'>
                     contact@eshfitness.com
                     </a>
                 </div>

@@ -1,3 +1,11 @@
+/* Variables */
+
+:root {
+    --footer-contact-mail-link-width: 170.3px;
+    --fa-envelope-width: 16px;
+    --fa-envelope-translateX-distance: calc((var(--footer-contact-mail-link-width)/2 + var(--fa-envelope-width)/2 + 0.5em) * -1);
+}
+
 address {
     font-style: normal;
 }
@@ -23,4 +31,19 @@ address {
     margin-left: .5rem;
     color: whitesmoke;
     text-decoration: none;
+}
+
+.address-info__email {
+    position: relative;
+}
+
+.fa-envelope {
+    position: absolute;
+    top: 2px;
+    transform: translateX(var(--fa-envelope-translateX-distance));
+}
+
+.footer-contact-email-link {
+    position: absolute;
+    transform: translate(-50%);
 }

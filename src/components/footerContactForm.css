@@ -47,6 +47,9 @@
 .field input:focus,
 .field textarea:focus {
     outline: none;
+    border-color: #e2853e;
+    -webkit-transition: ease-in-out 200ms;
+    transition: ease-in-out 200ms;
 }
 
 .button__send-message {

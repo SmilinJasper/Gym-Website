@@ -7,15 +7,15 @@ class ClientTestimonialSection extends Component {
     render() { 
         return ( 
 
-            <section class='home-testimonials'>
+            <section className='home-testimonials'>
 
             <header>
-                <h1 class='title'>WHAT<br />
+                <h1 className='title'>WHAT<br />
                     CLIENTS SAY
                 </h1>
             </header>
 
-            <div class='container'>
+            <div className='container'>
 
                 <Testimonial 
                 testimonial='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis itaque aliquid voluptatum minus atque fugiat ad suscipit! Necessitatibus accusamus consequuntur quod rerum.'

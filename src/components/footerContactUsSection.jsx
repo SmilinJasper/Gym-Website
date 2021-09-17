@@ -9,7 +9,7 @@ class FooterContactUsSection extends Component {
         
         <React.Fragment>
             
-            <section class='footer-contact-us-section'>
+            <section className='footer-contact-us-section'>
             
             <h2>
                 Contact Us

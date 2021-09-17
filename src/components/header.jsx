@@ -10,17 +10,17 @@ class Header extends Component {
 
             <Router>
                 
-                <header className="nav-bar-header">
+                <header className='nav-bar-header'>
 
-                    <div className="head">
-                        <img className="company-logo" src="/images/logo.png" alt="ESH Fitness Gym, Sulur, Coimbatore, Tamilnadu, India Logo" />
-                        <label for="nav-toggle" className="fas fa-bars fa-2x"></label>
+                    <div className='head'>
+                        <img className='company-logo' src='/images/logo.png' alt='ESH Fitness Gym, Sulur, Coimbatore, Tamilnadu, India Logo' />
+                        <label for='nav-toggle' className='fas fa-bars fa-2x'></label>
                     </div>
 
-                    <input type="checkbox" id="nav-toggle" className="nav-toggle" />
+                    <input type='checkbox' id='nav-toggle' className='nav-toggle' />
 
                     <nav>
-                        <ul className="nav-bar">
+                        <ul className='nav-bar'>
                             <li><NavLink to='/'>Home</NavLink></li>
                             <li><NavLink to='index.html'>Locations</NavLink></li> 
                             <li><NavLink to='index.html'>Our Trainers</NavLink></li> 
@@ -40,19 +40,19 @@ class Header extends Component {
 window.onload = () => {
     
     let lastScrollTopPosition = 0;
-    const navBarHeader = document.querySelector(".nav-bar-header");
+    const navBarHeader = document.querySelector('.nav-bar-header');
 
     function removeNavBarHeader(){
-        navBarHeader.classList.add("header--scrolled-down");
+        navBarHeader.classList.add('header--scrolled-down');
     }
 
     function addNavBarHeader(){
-        navBarHeader.classList.remove("header--scrolled-down");
+        navBarHeader.classList.remove('header--scrolled-down');
     }
 
-    window.addEventListener("scroll", () => {
+    window.addEventListener('scroll', () => {
 
-        const navBarHeaderIsRetracted = navBarHeader.classList.contains("header--scrolled-down");
+        const navBarHeaderIsRetracted = navBarHeader.classList.contains('header--scrolled-down');
 
         let scrollTopPosition = window.pageYOffset || document.documentElement.scrollTopPosition;
 

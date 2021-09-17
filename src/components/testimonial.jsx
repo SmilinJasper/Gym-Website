@@ -7,7 +7,7 @@ class Testimonial extends Component {
     render() { 
         return (
 
-        <article class="testimonial">
+        <article class='testimonial'>
 
             <blockquote>
                 <p>

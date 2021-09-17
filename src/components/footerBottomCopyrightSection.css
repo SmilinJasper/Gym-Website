@@ -1,0 +1,4 @@
+.footer-bottom-copyright-section {
+    grid-area: bottom-copyright-statement;
+    padding-bottom: 1em;
+}

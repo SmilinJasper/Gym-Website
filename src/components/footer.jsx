@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './footer.css'
+import FooterConnectWithUsSection from './footerConnectWithUsSection';
 import FooterContactUsSection from './footerContactUsSection';
 
 class Footer extends Component {
@@ -8,6 +9,7 @@ class Footer extends Component {
         
         <footer>
             <FooterContactUsSection />
+            <FooterConnectWithUsSection />
         </footer>
         
         );

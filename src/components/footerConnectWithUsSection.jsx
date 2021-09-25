@@ -12,19 +12,19 @@ class FooterConnectWithUsSection extends Component {
             <div className='social-media-links'>
                 <ul>
                     <li>
-                        <a href='https://www.instagram.com/eshfitnessone/' target='_blank' aria-label='ESH Fitness Instagram'>
+                        <a href='https://www.instagram.com/eshfitnessone/' target='_blank' rel="noopener noreferrer" aria-label='ESH Fitness Instagram'>
                             <i className='fa fa-instagram social-media-icon'></i>
                         </a>
                     </li>
 
                     <li>
-                        <a href='https://www.facebook.com/pages/category/Product-Service/ESH-Fitness-New-Arnold-Gym-Sulur-104493178377200/' target='_blank' aria-label='ESH Fitness Facebook'>
+                        <a href='https://www.facebook.com/pages/category/Product-Service/ESH-Fitness-New-Arnold-Gym-Sulur-104493178377200/' target='_blank' rel="noopener noreferrer" aria-label='ESH Fitness Facebook'>
                             <i className='fa fa-facebook social-media-icon'></i>
                         </a>
                     </li>
 
                     <li>
-                        <a href='https://twitter.com/home' target='_blank' aria-label='ESH Fitness Twitter'>
+                        <a href='https://twitter.com/home' target='_blank' rel="noopener noreferrer" aria-label='ESH Fitness Twitter'>
                             <i className='fa fa-twitter social-media-icon'></i>
                         </a>
                     </li>

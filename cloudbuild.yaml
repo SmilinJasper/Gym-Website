@@ -1,16 +1,10 @@
 steps:
-
 # Install Dependencies
-
 - name: 'gcr.io/cloud-builders/npm'
 args: ['install']
-
 #Build App
-
 - name: 'gcr.io/cloud-builders/npm'
 args: ['run', 'build']
-
 #Deploy App to Google Cloud
-
 - name: 'gcr.io/cloud-builders/gcloud'
 args: ['app', 'deploy']

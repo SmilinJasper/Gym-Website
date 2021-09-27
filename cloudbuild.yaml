@@ -14,19 +14,19 @@ steps:
 
 # Install Dependencies
 
-- name: 'gcr.io/cloud-builders/npm:7.15.1'
+- name: 'gcr.io/cloud-builders/npm'
   entrypoint: npm
   args: ['install', 'create-react-app']
 
 # Build App
 
-- name: 'gcr.io/cloud-builders/npm:7.15.1'
+- name: 'gcr.io/cloud-builders/npm'
   entrypoint: npm
   args: ['run', 'build']
 
 # Deploy App to Google Cloud
 
-- name: 'gcr.io/cloud-builders/gcloud:7.15.1'
+- name: 'gcr.io/cloud-builders/gcloud'
   entrypoint: npm
   args: ['app', 'deploy']
 

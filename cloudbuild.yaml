@@ -1,22 +1,22 @@
 steps:
 
-#Install Latest NPM Version
+# #Install Latest NPM Version
 
-- name: 'gcr.io/cloud-builders/npm'
-  entrypoint: npm
-  args: ['i', 'npm@latest', '-g']
+# - name: 'gcr.io/cloud-builders/npm'
+#   entrypoint: npm
+#   args: ['i', 'npm@latest', '-g']
 
-# Check NPM Version
+# # Check NPM Version
 
-- name: 'gcr.io/cloud-builders/npm:7.15.1'
-  entrypoint: npm
-  args: ['-v']
+# - name: 'gcr.io/cloud-builders/npm:7.15.1'
+#   entrypoint: npm
+#   args: ['-v']
 
 # Install Dependencies
 
 - name: 'gcr.io/cloud-builders/npm:7.15.1'
   entrypoint: npm
-  args: ['install']
+  args: ['install', 'create-react-app']
 
 # Build App
 

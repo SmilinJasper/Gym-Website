@@ -4,6 +4,12 @@ steps:
 
 - name: 'gcr.io/cloud-builders/npm:current'
   entrypoint: npm
+  args: ['-v']
+
+# Install Dependencies
+
+- name: 'gcr.io/cloud-builders/npm:current'
+  entrypoint: npm
   args: ['install']
 
 # Build App

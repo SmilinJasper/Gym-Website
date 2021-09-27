@@ -1,26 +1,32 @@
 steps:
 
-# Install Dependencies
+#Install Latest NPM Version
 
-- name: 'gcr.io/cloud-builders/npm:latest'
+- name: 'gcr.io/cloud-builders/npm'
+  entrypoint: npm
+  args: ['i', 'npm@latest', '-g']
+
+# Check NPM Version
+
+- name: 'gcr.io/cloud-builders/npm'
   entrypoint: npm
   args: ['-v']
 
 # Install Dependencies
 
-- name: 'gcr.io/cloud-builders/npm:latest'
+- name: 'gcr.io/cloud-builders/npm'
   entrypoint: npm
   args: ['install']
 
 # Build App
 
-- name: 'gcr.io/cloud-builders/npm:latest'
+- name: 'gcr.io/cloud-builders/npm'
   entrypoint: npm
   args: ['run', 'build']
 
 # Deploy App to Google Cloud
 
-- name: 'gcr.io/cloud-builders/gcloud:latest'
+- name: 'gcr.io/cloud-builders/gcloud'
   entrypoint: npm
   args: ['app', 'deploy']
 

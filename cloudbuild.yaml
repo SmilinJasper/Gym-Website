@@ -2,7 +2,7 @@ steps:
 
 # Install Dependencies
 
-- name: 'gcr.io/cloud-builders/npm'
+- name: 'gcr.io/cloud-builders/npm:current'
   entrypoint: npm
   args: ['install']
 

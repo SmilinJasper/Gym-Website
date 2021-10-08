@@ -1,0 +1,36 @@
+steps:
+
+# #Install Latest NPM Version
+
+# - name: 'gcr.io/cloud-builders/npm'
+#   entrypoint: npm
+#   args: ['i', 'npm@latest', '-g']
+
+# # Check NPM Version
+
+# - name: 'gcr.io/cloud-builders/npm:7.15.1'
+#   entrypoint: npm
+#   args: ['-v']
+
+# Install Dependencies
+
+- name: 'gcr.io/cloud-builders/npm'
+  entrypoint: npm
+  args: ['ci']
+
+# Build App
+
+- name: 'gcr.io/cloud-builders/npm'
+  entrypoint: npm
+  args: ['run', 'build']
+
+# Deploy App to Google Cloud
+
+- name: 'gcr.io/cloud-builders/gcloud'
+  entrypoint: gcloud
+  args: ['app', 'deploy']
+
+# Store Logs Only in Cloud
+
+options:
+  logging: CLOUD_LOGGING_ONLY

@@ -29,8 +29,3 @@ steps:
 - name: 'gcr.io/cloud-builders/gcloud'
   entrypoint: gcloud
   args: ['app', 'deploy']
-
-# Store Logs Only in Cloud
-
-options:
-  logging: CLOUD_LOGGING_ONLY

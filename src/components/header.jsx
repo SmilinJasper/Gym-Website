@@ -14,20 +14,22 @@ class Header extends Component {
 
                     <div className='head'>
                         <img className='company-logo' src='/images/logo.png' alt='ESH Fitness Gym, Sulur, Coimbatore, Tamilnadu, India Logo' />
-                            <ul className='nav-bar'>
+                            <nav className='nav-bar'>
+                            <ul>
                             <li><NavLink to='/'>Home</NavLink></li>
                             <li><NavLink to='index.html'>Locations</NavLink></li> 
                             <li><NavLink to='index.html'>Our Trainers</NavLink></li> 
                             <li><NavLink to='index.html'>Shop</NavLink></li> 
                             <li><NavLink to='index.html'>Contact Us</NavLink></li>
-                            </ul> 
+                            </ul>
+                            </nav>
                         <label for='nav-toggle' className='fas fa-bars fa-2x'></label>
                     </div>
 
                     <input type='checkbox' id='nav-toggle' className='nav-toggle' />
 
-                    <nav>
-                        <ul className='nav-bar-mobile'>
+                    <nav className='nav-bar-mobile'>
+                        <ul>
                             <li><NavLink to='/'>Home</NavLink></li>
                             <li><NavLink to='index.html'>Locations</NavLink></li> 
                             <li><NavLink to='index.html'>Our Trainers</NavLink></li> 

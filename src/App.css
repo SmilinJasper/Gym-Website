@@ -126,6 +126,13 @@ i {
 }
 
 
+/* LInks */
+
+a {
+    text-decoration: none;
+}
+
+
 /* Buttons */
 
 .button,

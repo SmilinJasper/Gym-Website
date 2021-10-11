@@ -58,6 +58,20 @@ nav a {
 }
 
 .nav-bar {
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar a {
+    color: #128ae6;
+}
+
+.nav-bar a:hover {
+    color: hsl(206, 100%, 35%);
+}
+
+.nav-bar-mobile {
     height: 100vh;
     background: rgba(0, 0, 0, 0.75);
     display: -webkit-box;
@@ -72,11 +86,11 @@ nav a {
     text-align: start;
 }
 
-.nav-bar li:first-child {
+.nav-bar-mobile li:first-child {
     margin-top: 4.5em;
 }
 
-.nav-bar li:not(:last-child) {
+.nav-bar-mobile li:not(:last-child) {
     padding-bottom: 12px;
 }
 

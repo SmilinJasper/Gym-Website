@@ -23,7 +23,7 @@ class Header extends Component {
                             <li><NavLink to='index.html'>Contact Us</NavLink></li>
                             </ul>
                             </nav>
-                        <label for='nav-toggle' className='fas fa-bars fa-2x'></label>
+                        <label for='nav-toggle' className='nav-bar-hamburger fas fa-bars fa-2x'></label>
                     </div>
 
                     <input type='checkbox' id='nav-toggle' className='nav-toggle' />

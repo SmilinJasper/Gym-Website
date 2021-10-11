@@ -34,6 +34,11 @@
     display: none;
 }
 
+.nav-bar {
+    display: none;
+    padding-right: 2em;
+}
+
 .nav-bar ul {
     width: 550px;
     display: flex;
@@ -106,4 +111,13 @@
     margin-top: -66px;
     -webkit-transition: margin 300ms ease-in-out;
     transition: margin 300ms ease-in-out;
+}
+
+@media only screen and (min-width:768px) {
+    .nav-bar {
+        display: block;
+    }
+    .nav-bar-hamburger {
+        display: none;
+    }
 }

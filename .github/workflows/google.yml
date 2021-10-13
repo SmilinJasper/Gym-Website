@@ -21,7 +21,7 @@ env:
   GKE_CLUSTER: gym-website-cluster    # TODO: update to cluster name
   GKE_ZONE: us-central1   # TODO: update to cluster zone
   DEPLOYMENT_NAME: gym-website-cluster # TODO: update to deployment name
-  IMAGE: static-site
+  IMAGE: gym-website
 
 jobs:
   setup-build-publish-deploy:

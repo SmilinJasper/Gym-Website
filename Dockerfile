@@ -5,6 +5,8 @@ WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
 COPY package.json /app/package.json
 COPY package-lock.json /app/package-lock.json
+ARG GITHUB_SHA
+ARG GITHUB_REF
 RUN npm ci
 RUN npm config set unsafe-perm true #https://stackoverflow.com/questions/52196518/could-not-get-uid-gid-when-building-node-docker
 COPY . /app

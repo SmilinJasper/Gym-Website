@@ -12,15 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+env:
+  project_id: ${{ secrets.GKE_PROJECT }}
+  image_name: gym-website
+  tag: $GITHUB_SHA
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: gym-website
 spec:
-  env:
-    project_id: ${{ secrets.GKE_PROJECT }}
-    image_name: gym-website
-    tag: $GITHUB_SHA
   replicas: 1
   selector:
     matchLabels:

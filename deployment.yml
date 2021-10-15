@@ -17,6 +17,10 @@ kind: Deployment
 metadata:
   name: gym-website
 spec:
+  env:
+    project_id: ${{ secrets.GKE_PROJECT }}
+    image_name: gym-website
+    tag: $GITHUB_SHA
   replicas: 1
   selector:
     matchLabels:
@@ -33,10 +37,6 @@ spec:
     spec:
       containers:
       - name: gym-website
-        env:
-          project_id: ${{ secrets.GKE_PROJECT }}
-          image_name: gym-website
-          tag: $GITHUB_SHA
         image: gcr.io/$project_id/$image_name:$GITHUB_SHA
         ports:
         - containerPort: 5000

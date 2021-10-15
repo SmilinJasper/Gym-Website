@@ -12,10 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-env:
-  project_id: ${{ secrets.GKE_PROJECT }}
-  image_name: gym-website
-  tag: $GITHUB_SHA
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -37,7 +33,7 @@ spec:
     spec:
       containers:
       - name: gym-website
-        image: gcr.io/$project_id/$image_name:$GITHUB_SHA
+        image: gcr.io/${{ secrets.GKE_PROJECT }}/gym-website:$GITHUB_SHA
         ports:
         - containerPort: 5000
         resources:

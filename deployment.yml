@@ -33,7 +33,7 @@ spec:
     spec:
       containers:
       - name: gym-website
-        image: gcr.io/project_id/image:tag=gcr.io/$PROJECT_ID/$IMAGE:$GITHUB_SHA
+        image: location-docker.pkg.dev/project_id/repository/image:tag=gcr.io/$PROJECT_ID/$IMAGE:$GITHUB_SHA
         ports:
         - containerPort: 5000
         resources:

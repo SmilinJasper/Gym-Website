@@ -15,12 +15,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: gym-website
+  name: gym-website-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: gym-website
+      app: gym-website-deployment
   strategy:
     rollingUpdate:
       maxSurge: 1
@@ -29,11 +29,11 @@ spec:
   template:
     metadata:
       labels:
-        app: gym-website
+        app: gym-website-deployment
     spec:
       containers:
-      - name: gym-website
-        image: gcr.io/${{ secrets.GKE_PROJECT }}/gym-website:$GITHUB_SHA
+      - name: gym-website-deployment
+        image: gcr.io/${{ secrets.GKE_PROJECT }}/gym-website:<GITHUB_SHA>
         ports:
         - containerPort: 5000
         resources:

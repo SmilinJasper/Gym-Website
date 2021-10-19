@@ -1,9 +1,9 @@
 FROM node:10 AS ui-build
 WORKDIR /usr/src/app
-COPY my-app/ ./my-app/
+COPY  . .
 COPY package.json /app/package.json
 COPY package-lock.json /app/package-lock.json
-RUN cd my-app && npm ci && npm run build
+RUN npm ci && npm run build
 
 
 FROM nginx:alpine
@@ -16,7 +16,7 @@ COPY ./.nginx/nginx.conf /etc/nginx/nginx.conf
 RUN rm -rf /usr/share/nginx/html/*
 
 # Copy from the stahg 1
-COPY --from=ui-build /usr/src/app/my-app/build/ /usr/share/nginx/html
+COPY --from=ui-build /usr/src/app/build/ /usr/share/nginx/html
 
 EXPOSE 80 5000
 
